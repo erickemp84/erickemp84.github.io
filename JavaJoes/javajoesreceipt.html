@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Luckiest+Guy&family=Mulish:wght@200&family=Pacifico&family=Playfair+Display&family=Poppins:wght@300&family=Quicksand:wght@500&display=swap"      rel="stylesheet">
+	<title>Java Joe's Receipt</title>
+	<style type="text/css">
+		#outlook a {padding:0;}
+		body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+		.ExternalClass {width:100%;}
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+		#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+		img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
+		a img {border:none;}
+		.image_fix {display:block;}
+		p {margin: 1em 0;}
+		h1, h2, h3, h4, h5, h6 {color: black !important;}
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: blue !important;}
+		h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+			color: red !important;
+		}
+		h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+			color: purple !important;
+		}
+		table td {border-collapse: collapse;}
+		table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+		a {color: orange;}
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #cccccc;
+        }
+
+        .main {
+            background-color: #ffffff;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-spacing: 0;
+            font: sans-serif;
+            color: #4a4a4a;
+            font-family: 'Poppins', sans-serif;
+        }
+
+		@media only screen and (max-device-width: 480px) {
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						color: black; /* or whatever your want */
+						pointer-events: none;
+						cursor: default;
+					}
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						color: orange !important; /* or whatever your want */
+						pointer-events: auto;
+						cursor: default;
+					}
+		}
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						color: blue;
+						pointer-events: none;
+						cursor: default;
+					}
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						color: orange !important;
+						pointer-events: auto;
+						cursor: default;
+					}
+		}
+	</style>
+	<!--[if IEMobile 7]>
+	<style type="text/css">
+		/* Targeting Windows Mobile */
+	</style>
+	<![endif]-->
+	<!--[if gte mso 9]>
+	<style>
+		/* Target Outlook 2007 and 2010 */
+	</style>
+	<![endif]-->
+</head>
+<body style="margin:0; padding:0; background-color:#F2F2F2;">
+	<center class="wrapper">
+        <table class="main" cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+            <!-- Image header row -->
+            <tr>
+                <td style="background-color:#B68E3E;text-align:center;color:white;padding-top:20px;">
+                    <p>
+                        <img src="https://images.unsplash.com/photo-1515283709260-ee29296f1534?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=80" alt="Coffee" width="120">
+                    </p>
+                    <p style="font-size:28px;">Java Joe's Coffee Shop</p>
+                </td>
+            </tr>
+            <!-- Review row -->
+            <tr style="background-color:#E3B14D;color:white;text-align:center;">
+                <td>
+                    <p style="font-size:20px;">Thank you for your purchase today!</p>
+                    <p style="font-size:14px;">We appreciate your business.</p>
+                </td>
+            </tr>
+            <!-- Total row -->
+            <tr>
+                <td style="text-align:center;font-size:54px;font-weight:bold;">
+                    <p>$12.37</p>
+                </td>
+            </tr>
+            <!-- Divider -->
+            <tr>
+                <td height="2" style="background-color: #66666633;"></td>
+                </td>
+            </tr>
+            <!-- Order summary row -->
+            <tr>
+                <td height="3" style="font-size: 14px;padding:20px;">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <p style="text-align: left;margin: 0;padding-left: 40px;">2 Orange Cranberry Scones</p>
+                            </td>
+                            <td>
+                                <p style="text-align: right;padding-right: 40px;">$5.50</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul style="text-align: left;margin: 0;padding-left: 40px;">Med Americano<ul>
+                            </td>
+                            <td>
+                                <p style="text-align: right;padding-right: 40px;">$4.75</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Divider -->
+            <tr>
+                <td height="2" style="background-color: #66666633;"></td>
+                </td>
+            </tr>
+            <!-- Cost summary row -->
+            <tr>
+                <td height="3" style="font-size: 14px;padding:20px;">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <p style="text-align: left;margin: 0;padding-left: 40px;">Subtotal:</p>
+                            </td>
+                            <td>
+                                <p style="text-align: right;padding-right: 40px;">$10.25</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="text-align: left;margin: 0;padding-left: 40px;">Sales Tax:</p>
+                            </td>
+                            <td>
+                                <p style="text-align: right;padding-right: 40px;">$1.12</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="text-align: left;margin: 0;padding-left: 40px;">Barrista's Tip:</p>
+                            </td>
+                            <td>
+                                <p style="text-align: right;padding-right: 40px;">$1.00</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Divider -->
+            <tr>
+                <td height="2" style="background-color: #66666633;"></td>
+                </td>
+            </tr>
+            <!-- Total row -->
+            <tr>
+                <td height="3" style="font-size: 14px;padding:20px;">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <p style="text-align: left;margin: 0;padding-left: 40px;">Total:</p>
+                            </td>
+                            <td>
+                                <p style="text-align: right;padding-right: 40px;">$12.37</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Payment method row -->
+            <tr>
+                <td style="font-size: 14px;">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <p style="text-align: left;margin: 0;padding-left: 60px;">Payment Method:</p>
+                            </td>
+                            <td style="text-align: right;padding-right: 60px;">
+                                <p>Visa(ending in 4558)</p>
+                                <p>2/10/22 8:37 a.m.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Divider -->
+            <tr>
+                <td height="2" style="background-color: #66666633;"></td>
+                </td>
+            </tr>
+            <!-- Footer greeting row -->
+            <tr>
+                <td style="text-align:center;padding:20px 0;">
+                    <p style="font-weight:bold;">How was your service today?</p>
+                    <p style="font-size:14px;">You can leave feedback <a href="#" style="color:white;">here</a>.</p>
+                </td>
+            </tr>
+            <!-- Divider -->
+            <tr>
+                <td height="2" style="background-color: #66666633;"></td>
+                </td>
+            </tr>
+            <!-- Receipt footer -->
+            <tr>
+                <td style="text-align:center;padding:20px 0;">
+                    <p style="font-weight:bold;">To change your receipt settings, <a href="#">click here.</a></p>
+                    <p><a href="#">Not your receipt?</a></p>
+                </td>
+            </tr>
+            <!-- Company address row -->
+            <tr>
+                <td style="text-align:center;padding-bottom:20px;font-size:10px">
+                    <p>&#169 2022 Payments Inc</p>
+                    <a href="#">Privacy Policy</a>
+                    <p>Java Joe's Coffee Shop</p>
+                    <p>255 Morning View Drive</p>
+                    <p>Denver, CO 80201</p>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
